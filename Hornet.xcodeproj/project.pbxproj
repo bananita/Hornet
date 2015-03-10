@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F51CAFBE1AAF9B7B00F3A803 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CAFBD1AAF9B7B00F3A803 /* main.m */; };
-		F51CAFC11AAF9B7B00F3A803 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CAFC01AAF9B7B00F3A803 /* AppDelegate.m */; };
-		F51CAFC41AAF9B7B00F3A803 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CAFC31AAF9B7B00F3A803 /* ViewController.m */; };
-		F51CAFC71AAF9B7B00F3A803 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51CAFC51AAF9B7B00F3A803 /* Main.storyboard */; };
-		F51CAFC91AAF9B7B00F3A803 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F51CAFC81AAF9B7B00F3A803 /* Images.xcassets */; };
-		F51CAFCC1AAF9B7B00F3A803 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F51CAFCA1AAF9B7B00F3A803 /* LaunchScreen.xib */; };
 		F51CAFD81AAF9B7B00F3A803 /* HornetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CAFD71AAF9B7B00F3A803 /* HornetTests.m */; };
+		F51CAFED1AAF9BB300F3A803 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CAFE21AAF9BB300F3A803 /* AppDelegate.m */; };
+		F51CAFEE1AAF9BB300F3A803 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F51CAFE41AAF9BB300F3A803 /* LaunchScreen.xib */; };
+		F51CAFEF1AAF9BB300F3A803 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51CAFE61AAF9BB300F3A803 /* Main.storyboard */; };
+		F51CAFF01AAF9BB300F3A803 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F51CAFE81AAF9BB300F3A803 /* Images.xcassets */; };
+		F51CAFF11AAF9BB300F3A803 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F51CAFE91AAF9BB300F3A803 /* Info.plist */; };
+		F51CAFF21AAF9BB300F3A803 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CAFEA1AAF9BB300F3A803 /* main.m */; };
+		F51CAFF31AAF9BB300F3A803 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CAFEC1AAF9BB300F3A803 /* ViewController.m */; };
+		F51CAFF71AAF9C1800F3A803 /* Hornet.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CAFF61AAF9C1800F3A803 /* Hornet.m */; };
+		F51CAFFA1AAF9CE800F3A803 /* NSObject+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CAFF91AAF9CE800F3A803 /* NSObject+Properties.m */; };
+		F51CAFFC1AAF9D3B00F3A803 /* NSObject+PropertiesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CAFFB1AAF9D3B00F3A803 /* NSObject+PropertiesTests.m */; };
+		F51CAFFF1AAFA4E700F3A803 /* HornetCore.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CAFFE1AAFA4E700F3A803 /* HornetCore.m */; };
+		F51CB0011AAFA80900F3A803 /* HornetCoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CB0001AAFA80900F3A803 /* HornetCoreTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,18 +34,26 @@
 
 /* Begin PBXFileReference section */
 		F51CAFB81AAF9B7B00F3A803 /* Hornet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hornet.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F51CAFBC1AAF9B7B00F3A803 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F51CAFBD1AAF9B7B00F3A803 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F51CAFBF1AAF9B7B00F3A803 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		F51CAFC01AAF9B7B00F3A803 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F51CAFC21AAF9B7B00F3A803 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F51CAFC31AAF9B7B00F3A803 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F51CAFC61AAF9B7B00F3A803 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F51CAFC81AAF9B7B00F3A803 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F51CAFCB1AAF9B7B00F3A803 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F51CAFD11AAF9B7B00F3A803 /* HornetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HornetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51CAFD61AAF9B7B00F3A803 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F51CAFD71AAF9B7B00F3A803 /* HornetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HornetTests.m; sourceTree = "<group>"; };
+		F51CAFE11AAF9BB300F3A803 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = HornetApp/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		F51CAFE21AAF9BB300F3A803 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = HornetApp/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		F51CAFE51AAF9BB300F3A803 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		F51CAFE71AAF9BB300F3A803 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		F51CAFE81AAF9BB300F3A803 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = HornetApp/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		F51CAFE91AAF9BB300F3A803 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = HornetApp/Info.plist; sourceTree = SOURCE_ROOT; };
+		F51CAFEA1AAF9BB300F3A803 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = HornetApp/main.m; sourceTree = SOURCE_ROOT; };
+		F51CAFEB1AAF9BB300F3A803 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = HornetApp/ViewController.h; sourceTree = SOURCE_ROOT; };
+		F51CAFEC1AAF9BB300F3A803 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = HornetApp/ViewController.m; sourceTree = SOURCE_ROOT; };
+		F51CAFF51AAF9C1800F3A803 /* Hornet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hornet.h; path = Hornet/Hornet.h; sourceTree = "<group>"; };
+		F51CAFF61AAF9C1800F3A803 /* Hornet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Hornet.m; path = Hornet/Hornet.m; sourceTree = "<group>"; };
+		F51CAFF81AAF9CE800F3A803 /* NSObject+Properties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+Properties.h"; path = "Hornet/NSObject+Properties.h"; sourceTree = "<group>"; };
+		F51CAFF91AAF9CE800F3A803 /* NSObject+Properties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Properties.m"; path = "Hornet/NSObject+Properties.m"; sourceTree = "<group>"; };
+		F51CAFFB1AAF9D3B00F3A803 /* NSObject+PropertiesTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PropertiesTests.m"; sourceTree = "<group>"; };
+		F51CAFFD1AAFA4E700F3A803 /* HornetCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HornetCore.h; path = Hornet/HornetCore.h; sourceTree = "<group>"; };
+		F51CAFFE1AAFA4E700F3A803 /* HornetCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HornetCore.m; path = Hornet/HornetCore.m; sourceTree = "<group>"; };
+		F51CB0001AAFA80900F3A803 /* HornetCoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HornetCoreTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +77,10 @@
 		F51CAFAF1AAF9B7B00F3A803 = {
 			isa = PBXGroup;
 			children = (
-				F51CAFBA1AAF9B7B00F3A803 /* Hornet */,
+				F51CAFF41AAF9BEE00F3A803 /* Hornet */,
 				F51CAFD41AAF9B7B00F3A803 /* HornetTests */,
 				F51CAFB91AAF9B7B00F3A803 /* Products */,
+				F51CAFBA1AAF9B7B00F3A803 /* HornetApp */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,34 +93,28 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F51CAFBA1AAF9B7B00F3A803 /* Hornet */ = {
+		F51CAFBA1AAF9B7B00F3A803 /* HornetApp */ = {
 			isa = PBXGroup;
 			children = (
-				F51CAFBF1AAF9B7B00F3A803 /* AppDelegate.h */,
-				F51CAFC01AAF9B7B00F3A803 /* AppDelegate.m */,
-				F51CAFC21AAF9B7B00F3A803 /* ViewController.h */,
-				F51CAFC31AAF9B7B00F3A803 /* ViewController.m */,
-				F51CAFC51AAF9B7B00F3A803 /* Main.storyboard */,
-				F51CAFC81AAF9B7B00F3A803 /* Images.xcassets */,
-				F51CAFCA1AAF9B7B00F3A803 /* LaunchScreen.xib */,
-				F51CAFBB1AAF9B7B00F3A803 /* Supporting Files */,
+				F51CAFE11AAF9BB300F3A803 /* AppDelegate.h */,
+				F51CAFE21AAF9BB300F3A803 /* AppDelegate.m */,
+				F51CAFE31AAF9BB300F3A803 /* Base.lproj */,
+				F51CAFE81AAF9BB300F3A803 /* Images.xcassets */,
+				F51CAFE91AAF9BB300F3A803 /* Info.plist */,
+				F51CAFEA1AAF9BB300F3A803 /* main.m */,
+				F51CAFEB1AAF9BB300F3A803 /* ViewController.h */,
+				F51CAFEC1AAF9BB300F3A803 /* ViewController.m */,
 			);
+			name = HornetApp;
 			path = Hornet;
-			sourceTree = "<group>";
-		};
-		F51CAFBB1AAF9B7B00F3A803 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F51CAFBC1AAF9B7B00F3A803 /* Info.plist */,
-				F51CAFBD1AAF9B7B00F3A803 /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		F51CAFD41AAF9B7B00F3A803 /* HornetTests */ = {
 			isa = PBXGroup;
 			children = (
 				F51CAFD71AAF9B7B00F3A803 /* HornetTests.m */,
+				F51CAFFB1AAF9D3B00F3A803 /* NSObject+PropertiesTests.m */,
+				F51CB0001AAFA80900F3A803 /* HornetCoreTests.m */,
 				F51CAFD51AAF9B7B00F3A803 /* Supporting Files */,
 			);
 			path = HornetTests;
@@ -117,6 +126,29 @@
 				F51CAFD61AAF9B7B00F3A803 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F51CAFE31AAF9BB300F3A803 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				F51CAFE41AAF9BB300F3A803 /* LaunchScreen.xib */,
+				F51CAFE61AAF9BB300F3A803 /* Main.storyboard */,
+			);
+			name = Base.lproj;
+			path = HornetApp/Base.lproj;
+			sourceTree = SOURCE_ROOT;
+		};
+		F51CAFF41AAF9BEE00F3A803 /* Hornet */ = {
+			isa = PBXGroup;
+			children = (
+				F51CAFF51AAF9C1800F3A803 /* Hornet.h */,
+				F51CAFF61AAF9C1800F3A803 /* Hornet.m */,
+				F51CAFF81AAF9CE800F3A803 /* NSObject+Properties.h */,
+				F51CAFF91AAF9CE800F3A803 /* NSObject+Properties.m */,
+				F51CAFFD1AAFA4E700F3A803 /* HornetCore.h */,
+				F51CAFFE1AAFA4E700F3A803 /* HornetCore.m */,
+			);
+			name = Hornet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +231,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F51CAFC71AAF9B7B00F3A803 /* Main.storyboard in Resources */,
-				F51CAFCC1AAF9B7B00F3A803 /* LaunchScreen.xib in Resources */,
-				F51CAFC91AAF9B7B00F3A803 /* Images.xcassets in Resources */,
+				F51CAFF11AAF9BB300F3A803 /* Info.plist in Resources */,
+				F51CAFF01AAF9BB300F3A803 /* Images.xcassets in Resources */,
+				F51CAFEE1AAF9BB300F3A803 /* LaunchScreen.xib in Resources */,
+				F51CAFEF1AAF9BB300F3A803 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +252,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F51CAFC41AAF9B7B00F3A803 /* ViewController.m in Sources */,
-				F51CAFC11AAF9B7B00F3A803 /* AppDelegate.m in Sources */,
-				F51CAFBE1AAF9B7B00F3A803 /* main.m in Sources */,
+				F51CAFF31AAF9BB300F3A803 /* ViewController.m in Sources */,
+				F51CAFF21AAF9BB300F3A803 /* main.m in Sources */,
+				F51CAFFA1AAF9CE800F3A803 /* NSObject+Properties.m in Sources */,
+				F51CAFED1AAF9BB300F3A803 /* AppDelegate.m in Sources */,
+				F51CAFFF1AAFA4E700F3A803 /* HornetCore.m in Sources */,
+				F51CAFF71AAF9C1800F3A803 /* Hornet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F51CAFFC1AAF9D3B00F3A803 /* NSObject+PropertiesTests.m in Sources */,
+				F51CB0011AAFA80900F3A803 /* HornetCoreTests.m in Sources */,
 				F51CAFD81AAF9B7B00F3A803 /* HornetTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,20 +282,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F51CAFC51AAF9B7B00F3A803 /* Main.storyboard */ = {
+		F51CAFE41AAF9BB300F3A803 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F51CAFC61AAF9B7B00F3A803 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F51CAFCA1AAF9B7B00F3A803 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F51CAFCB1AAF9B7B00F3A803 /* Base */,
+				F51CAFE51AAF9BB300F3A803 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		F51CAFE61AAF9BB300F3A803 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F51CAFE71AAF9BB300F3A803 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -343,7 +381,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Hornet/Info.plist;
+				INFOPLIST_FILE = HornetApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,7 +391,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Hornet/Info.plist;
+				INFOPLIST_FILE = HornetApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

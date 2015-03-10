@@ -1,40 +1,106 @@
-//
-//  HornetTests.m
-//  HornetTests
-//
-//  Created by Michal Banasiak on 10.03.2015.
-//  Copyright (c) 2015 SO MANY APPS. All rights reserved.
-//
-
-#import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "Hornet.h"
+
+@protocol Proto <NSObject>
+@end
+
+@protocol SecondProto <NSObject>
+@end
+
+@interface ProtoImpl : NSObject <Proto>
+@end
+
+@implementation ProtoImpl
+@end
+
+@interface ClassToInject : NSObject
+@property id<Proto> injected;
+@property id<SecondProto> objectOfSecondProtocol;
+@end
+
+@implementation ClassToInject
+- (id)init {
+    self = [super init];
+    [Hornet inject:self];
+    return self;
+}
+@end
 
 @interface HornetTests : XCTestCase
-
 @end
 
 @implementation HornetTests
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+
+    [Hornet unregisterAll];
 }
 
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
+- (void)testWithoutRegisteredClassObjectShouldntBeCreated {
+    //Act
+    ClassToInject *object = [ClassToInject new];
+
+    //Assert
+    XCTAssertNil(object.injected);
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+- (void)testPropertyOfUnregisteredProtocolShouldBeNil {
+    //Arrange
+    [Hornet registerClass:[ProtoImpl class] forProtocol:@protocol(Proto)];
+
+    //Act
+    ClassToInject *object = [ClassToInject new];
+
+    //Assert
+    XCTAssertNil(object.objectOfSecondProtocol);
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testAfterRegisteringNoSingletonObjectOfProperClassShouldBeInjected {
+    //Arrange
+    [Hornet registerClass:[ProtoImpl class] forProtocol:@protocol(Proto)];
+
+    //Act
+    ClassToInject *object = [ClassToInject new];
+
+    //Assert
+    XCTAssertEqualObjects([object.injected class], [ProtoImpl class]);
+}
+
+- (void)testAfterRegisteringNoSingletonEveryInjectedObjectShouldBeNew {
+    //Arrange
+    [Hornet registerClass:[ProtoImpl class] forProtocol:@protocol(Proto)];
+
+    //Act
+    ClassToInject *firstObject = [ClassToInject new];
+    ClassToInject *secondObject = [ClassToInject new];
+
+    //Assert
+    XCTAssertNotEqual(firstObject.injected, secondObject.injected);
+}
+
+- (void)testAfterRegisteringSingletonObjectOfProperClassShouldBeInjected {
+    //Arrange
+    [Hornet registerSingletonClass:[ProtoImpl class] forProtocol:@protocol(Proto)];
+
+    //Act
+    ClassToInject *object = [ClassToInject new];
+
+    //Assert
+    XCTAssertEqualObjects([object.injected class], [ProtoImpl class]);
+}
+
+- (void)testAfterRegisteringSingletonEveryInjectedObjectShouldBeSameObject {
+    //Arrange
+    [Hornet registerSingletonClass:[ProtoImpl class] forProtocol:@protocol(Proto)];
+
+    //Act
+    ClassToInject *firstObject = [ClassToInject new];
+    ClassToInject *secondObject = [ClassToInject new];
+
+    //Assert
+    XCTAssertEqual(firstObject.injected, secondObject.injected);
 }
 
 @end
+
